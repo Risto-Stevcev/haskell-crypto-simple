@@ -2,7 +2,6 @@ module Crypto.Simple.CTR where
 
 import Data.Monoid ((<>))
 import Data.ByteString (ByteString)
-import Crypto.Cipher.AES (AES256)
 import Crypto.Cipher.Types (makeIV)
 import Crypto.Random.Entropy (getEntropy)
 import Crypto.Data.Padding (pad, Format(PKCS7))
