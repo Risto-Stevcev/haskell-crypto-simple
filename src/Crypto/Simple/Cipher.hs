@@ -3,11 +3,8 @@ module Crypto.Simple.Cipher where
 import Data.Monoid ((<>))
 import Data.ByteString (ByteString)
 import Crypto.Cipher.AES (AES256)
-import Crypto.Random.Entropy (getEntropy)
 import Crypto.Cipher.Types (BlockCipher(..), Cipher(..), IV)
 import Crypto.Error (CryptoFailable(..))
-import qualified Data.ByteString as B
-
 
 newtype Key a = Key ByteString
     deriving (Show,Eq)
